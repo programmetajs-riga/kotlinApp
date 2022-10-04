@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kotlin task</string>
+    <string name="title_home">Mājas</string>
+    <string name="username">Lietotājvārds</string>
+    <string name="password">Parole</string>
+    <string name="login">Pieslēgties</string>
+    <string name="title_app_settings">Lietotņu iestatījumi</string>
+    <string name="place">Vieta</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="_1_place" translatable="false">1.vieta</string>
+    <string name="open_map">Atvērt karti</string>
+    <string name="title_language">Valoda</string>
+    <string name="title_language_selected">Latviešu</string>
+    <string name="title_pin_code">PIN kods</string>
+    <string name="title_pin_code_selected">Atspējot</string>
+    <string name="title_button">Autorizēt</string>
+    <string name="back">Atpakaļ</string>
+    <string name="submit">Iesniegt</string>
+</resources>
