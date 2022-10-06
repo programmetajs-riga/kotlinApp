@@ -19,6 +19,7 @@ class PlaceFragment : Fragment() , OnMapReadyCallback{
 
     private var _binding: FragmentPlaceBinding? = null
 
+    private var mapSaveState : Int = 0
 
     private val binding get() = _binding!!
     private lateinit var gMap : GoogleMap
@@ -46,10 +47,14 @@ class PlaceFragment : Fragment() , OnMapReadyCallback{
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        gMap = googleMap
-        val marker = LatLng(56.9600, 24.0997)
-        gMap.addMarker(MarkerOptions().position(marker).title("Here"))
-        gMap.moveCamera(CameraUpdateFactory.newLatLng(marker))
-        gMap.animateCamera(CameraUpdateFactory.newLatLngZoom(marker , 12F))
+        if(mapSaveState == 0){
+            gMap = googleMap
+            val marker = LatLng(56.9600, 24.0997)
+            gMap.addMarker(MarkerOptions().position(marker).title("Here"))
+            gMap.moveCamera(CameraUpdateFactory.newLatLng(marker))
+            gMap.animateCamera(CameraUpdateFactory.newLatLngZoom(marker , 12F))
+            mapSaveState = 1
+        }
+
     }
 }
